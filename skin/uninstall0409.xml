@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Window size="340,360" caption="0,0,0,80"  borderround="5,5,5,5" >
+  <Font id="0" name="微软雅黑" size="13" bold="false" default="true" />
+  <Font id="1" name="微软雅黑" size="13" bold="true" />
+  <Font id="2" name="微软雅黑" size="20" bold="false" />
+	
+  <VerticalLayout width="340" height="360" bkcolor="#ff272731">
+  <!--126*36-->
+	<VerticalLayout height="160" bkcolor="#ff272731">
+	<Control height="45"/>
+	<HorizontalLayout height="36">
+	<Control width="106"/>
+	<Label bkimage="PB_Logo.png"/>
+	<Control width="106"/>
+	</HorizontalLayout>
+	<Control height=""/>
+	</VerticalLayout>
+    <TabLayout name="wizardTab" width="340" height="225" bkcolor="#ff272731">
+      <!-- 许可 目录---->
+      <VerticalLayout name="vrlLicense" width="350" height="225" bkcolor="#ff272731">
+			 <HorizontalLayout height="42">
+				 <Control width="30"/>
+				 <Button name="btnUnInstall" width="280" font="2" normalimage="btn_nor.png" hotimage="btn_hor.png" textcolor="#FFFFFFFF" text="一键卸载"/>
+				 <Control width=""/>
+            </HorizontalLayout>
+			<Control height="10"/>
+			<Label visible="false" height="17" align="left" text="安装路径"/>
+			
+			<HorizontalLayout visible="false"  height="30">
+				 <Control width="30"/>
+				 <RichEdit name="editDir" bordersize ="1" inset="3,0,0,0" bordercolor="#ff898f96" width="207" textcolor="#ff898f96" text="D://LenovoGame"/>
+				 <Control width="2"/>
+				 <Button name="btnSelectDir" width ="73" normalimage="btn1_nor.png" hotimage="btn1_hor.png" textcolor="#FFFFFFFF" text="更改路径"/>
+				 <Control width=""/>
+            </HorizontalLayout>
+			<Control height="75"/>
+			<HorizontalLayout visible="false"  height="18">
+				 <Control width="30"/>
+				 <CheckBox name="chkLicenseAgree" font="4" text="已同意" textcolor="#FFFFFFFF" width="70" align="left" textpadding="18,1,0,0" selected="true" normalimage="file='checkbox_normal.jpg' source='0,0,16,16' dest='0,4,16,20'" normalhotimage="file='checkbox_normal.jpg' source='0,0,16,16' dest='0,4,16,20'" selectedimage="file='checkbox_select.jpg' source='0,0,16,16' dest='0,4,16,20'" selectedhotimage="file='checkbox_select.jpg' source='0,0,16,16' dest='0,4,16,20'" />
+				 
+				 <Control width="7"/>
+				 <Button name="btnLicentURL" width ="80" align="center" textcolor="#FFFF0000" text="联想许可协议"/>
+				 <Label  text="和" align="center" width="15" textcolor="#ff898f96"/>
+				 <Button name="btnRegesterURL" width ="75" align="center" textcolor="#FFFF0000" text="立即注册"/>
+				 <Control width=""/>
+            </HorizontalLayout>
+			
+			<Control height="" bkcolor="#ff272731"/>
+      </VerticalLayout>
+
+      <!-- 安装进度 -->
+       <VerticalLayout name="vrlLicense" width="340" height="225" bkcolor="#ff272731">
+			<Control height="42"/>
+            <HorizontalLayout height="16">
+				 <Control width="30"/>
+				 <Label  text="正在卸载联想游戏中心" align="left" width="200" textcolor="#ff898f96"/>
+				 <Label  name="progressLabel" text="0%" align="right" textcolor="#ff898f96"/>
+				 <Control width="30"/>
+            </HorizontalLayout>
+			<Control height="2"/>
+			<HorizontalLayout height="14">
+				 <Control width="30"/>
+				 <Slider name ="slrProgress" foreimage="forceImage.png" thumbimage="sliter.png" thumbhotimage="sliter.png" thumbpushedimage="sliter.png" thumbsize="10,10" bordercolor="#ff8d959b" bordersize="1" height="10" min="0" max="100" value="50" />
+				 <Control width=""/>
+            </HorizontalLayout>
+			<Control />
+			
+      </VerticalLayout>
+
+      <!-- 安装完成 -->
+       <VerticalLayout name="vrlLicense" width="340" height="225" bkcolor="#ff272731">
+            <Control height="42"/>
+            <HorizontalLayout height="42">
+				 <Control width="30"/>
+				<Button name="btnUninstallFinished" width="280" font="2" normalimage="btn_nor.png" hotimage="btn_hor.png" textcolor="#FFFFFFFF" text="卸载完成"/>
+				 <Control width=""/>
+            </HorizontalLayout>
+			<Control />
+      </VerticalLayout>
+    </TabLayout>
+	
+	<Button  normalimage="btn_close.png" hotimage="btn_close.png" float="true" pos="-32,10,-18,25" name="btnUninstallClose" height="15" width="15" />
+	<Button  normalimage="btn_min.png" hotimage="btn_min.png" float="true" pos="-62,10,-47,25" name="btnMin" height="15" width="15" />
+  </VerticalLayout>
+  
+ 
+</Window>

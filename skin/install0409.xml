@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Window size="340,380" caption="0,0,0,80"  borderround="5,5,5,5" sizebox="0,0,0,0">
+  <Font id="0" name="微软雅黑" size="13" bold="false" default="true" />
+  <Font id="1" name="微软雅黑" size="13" bold="true" />
+  <Font id="2" name="微软雅黑" size="20" bold="false" />
+	
+  <VerticalLayout width="340" height="380" bkcolor="#ff272731">
+  <!--126*36-->
+	<VerticalLayout height="148" bkcolor="#ff272731">
+	<Control height="68"/>
+	<HorizontalLayout height="36">
+	<Control width="106"/>
+	<Label bkimage="PB_Logo.png"/>
+	<Control width="106"/>
+	</HorizontalLayout>
+	<Control height=""/>
+	</VerticalLayout>
+    <TabLayout name="wizardTab" width="340" height="232" bkcolor="#ff272731">
+      <!-- 许可 目录---->
+      <VerticalLayout name="vrlLicense" width="340" height="232" bkcolor="#ff272731">
+			
+			<Control height="10"/>
+			<HorizontalLayout height="17">
+				 <Control width="14"/>
+				 <Label width="243" align="left" textcolor="#ff8d959b" text="安装路径"/>
+				 <Control width=""/>
+            </HorizontalLayout>
+			
+			<Control height="6"/>
+			
+			<HorizontalLayout height="24">
+				 <Control width="14"/>
+				 <RichEdit name="editDir"  multiline="false" bordersize ="1" inset="3,0,0,0" bordercolor="#ff8d959b" textcolor="#ff8d959b" text="D://LenovoGame"/>
+				 <Control width="2"/>
+				 <Button name="btnSelectDir" width ="67" normalimage="btnchangepath_nor.png" hotimage="btnchangepath_hor.png" pushedimage="btnchangepath_act.png"/>
+				 <Control width="14"/>
+            </HorizontalLayout>
+			
+			<Control height="34"/>
+			
+			 <HorizontalLayout height="44">
+				 <Control width="80"/>
+				 <Button name="btnLicenseNext" width="180" normalimage="btninstall_nor.png" pushedimage="btninstall_act.png" hotimage="btninstall_hor.png" />
+				 <Control width=""/>
+            </HorizontalLayout>
+			<Control height="73"/>
+			
+			<HorizontalLayout height="18">
+				 <Control width="13"/>
+				 <CheckBox name="chkLicenseAgree" font="4" text="已同意" textcolor="#FFFFFFFF" width="70" align="left" textpadding="18,1,0,0" selected="true" normalimage="file='BTN_Check.png' source='0,0,10,10' dest='0,6,10,16'" normalhotimage="file='BTN_Check.png' source='0,0,10,10' dest='0,6,10,16" selectedimage="file='BTN_Check2.png' source='0,0,16,16' dest='0,6,10,16'" selectedhotimage="file='BTN_Check2.png' source='0,0,10,10' dest='0,6,10,16'" />
+				 
+				 <Control width="7"/>
+				 <Button name="btnLicentURL" width ="80" align="right" textcolor="#FFD5064F" text="联想许可协议"/>
+				 <Label  text="和" align="center" width="15" textcolor="#ff8d959b"/>
+				 <Button name="btnRegesterURL" width ="75" align="left" textcolor="#FFD5064F" text="隐私声明"/>
+				 <Control width=""/>
+            </HorizontalLayout>
+			
+			<Control height="" bkcolor="#ff272731"/>
+      </VerticalLayout>
+
+      <!-- 安装进度 -->
+       <VerticalLayout name="vrlLicense" width="340" height="232" bkcolor="#ff272731">
+			<Control height="42"/>
+            <HorizontalLayout height="16">
+				 <Control width="14"/>
+				 <Label  text="正在安装联想游戏中心" align="left"  textcolor="#ff8d959b"/>
+				 <Label  name="progressLabel" width="30" text="0%" align="right" textcolor="#ff8d959b"/>
+				 <Control width="14"/>
+            </HorizontalLayout>
+			<Control height="6"/>
+			<HorizontalLayout height="14">
+				 <Control width="14"/>
+				 <Slider name ="slrProgress" foreimage="forceImage.png" thumbimage="sliter.png" thumbhotimage="sliter.png" thumbpushedimage="sliter.png" thumbsize="10,10" bordercolor="#ff8d959b" bordersize="1" height="10" min="0" max="100" value="50" />
+				 <Control width="14"/>
+            </HorizontalLayout>
+			<Control />
+			
+      </VerticalLayout>
+
+      <!-- 安装完成 -->
+       <VerticalLayout name="vrlLicense" width="340" height="232" bkcolor="#ff272731">
+            <Control height="42"/>
+            <HorizontalLayout height="44">
+				 <Control width="80"/>
+				<Button name="btnFinished" width="180" normalimage="btnrun_nor.png" hotimage="btnrun_hor.png" pushedimage="btnrun_act.png"/>
+				 <Control width=""/>
+            </HorizontalLayout>
+			<Control />
+      </VerticalLayout>
+    </TabLayout>
+	
+	<Button  normalimage="btn_close.png" hotimage="btn_close.png" float="true" pos="-32,10,-18,25" name="btnClose" height="15" width="15" />
+	<Button  normalimage="btn_min.png" hotimage="btn_min.png" float="true" pos="-62,10,-47,25" name="btnMin" height="15" width="15" />
+  </VerticalLayout>
+  
+ 
+</Window>

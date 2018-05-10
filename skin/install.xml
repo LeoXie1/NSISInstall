@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window size="350,370" sizebox="0,0,0,0" roundcorner="11,11" caption="0,0,0,30" showdirty="false">
+  <Font name="微软雅黑" size="13" bold="false" default="true" />
+  <Font name="微软雅黑" size="13" bold="true" />
+  <Default name="VScrollBar" value="railnormalimage=&quot;file='scrollbar.png' source='0,90,18,109'&quot; railpushedimage=&quot;file='scrollbar.png' source='18,90,36,109'&quot; button1normalimage=&quot;file='scrollbar.png' source='0,0,18,18'&quot; button1pushedimage=&quot;file='scrollbar.png' source='18,0,36,18'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,36,18,54'&quot; button2pushedimage=&quot;file='scrollbar.png' source='18,36,36,54'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,55,18,90' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='18,55,36,91' corner='0,2,0,2'&quot; bkcolor=&quot;#FFF1F6ED&quot;" />
+	
+  <VerticalLayout width="350" height="370" bkcolor="#ff272731">
+  <Button name="changeskinbtn" height="20" text="换肤" maxwidth="120" />
+    <TabLayout name="wizardTab" width="350" height="370" bkcolor="#ff272731">
+      <!-- 许可 目录---->
+      <VerticalLayout name="vrlLicense" width="350" height="370" bkcolor="#ff272731">
+            <HorizontalLayout height="32">
+                <HorizontalLayout width="200">
+            </HorizontalLayout>
+      </VerticalLayout>
+
+      <!-- 安装进度 -->
+      <VerticalLayout name="vrlSelectDir" width="350" height="370" bkimage="finish_bk.png">
+        <HorizontalLayout height="32">
+        </HorizontalLayout>
+      </VerticalLayout>
+
+      <!-- 安装完成 -->
+      <VerticalLayout name="vrlSelectDir" width="350" height="370" bkimage="finish_bk.png">
+        <HorizontalLayout height="32">
+        </HorizontalLayout>
+      </VerticalLayout>
+    </TabLayout>
+  </VerticalLayout>
+</Window>
